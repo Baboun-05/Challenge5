@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/*    font-family: 'Lexend Deca', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+/*font-family: 'Big Shoulders Display', cursive;*/
+:root {
+/*## Layout*/
+--mobile: 375px;
+--desktop: 1440px;
+/*## Colors*/
+/*### Primary*/
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+/*## Neutral*/
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray : hsl(0, 0%, 95%);
+/*(background, headings, buttons)*/
+/*## Body Copy*/
+--Font-size: 15px;
+}
+@media (min-width: 600px) {
+p {
+    color: var(--Transparent-white);
+    font-size: var(--Font-size);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.5;
+}
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: var(--Very-light-gray);
+}
+.one {
+    background-color: var(--Bright-orange);
+    border-radius: 10px 0 0 10px;
+    padding: 50px;
+    width: 210px;
+    grid-area: a;
+}
+.button-one {
+    color: var(--Bright-orange);
+}
+.button-one:hover {
+    background-color: var(--Bright-orange);
+    color: var(--Transparent-white);
+    border: solid var(--Transparent-white);
+    cursor: pointer;
+    position: absolute;
+    font-weight: bold;
+}
+
+.two {
+    background-color: var(--Dark-cyan);
+    padding: 50px;
+    width: 210px;
+    grid-area: b;
+}
+.button-two {
+    color: var(--Dark-cyan);
+}
+.button-two:hover {
+    background-color: var(--Dark-cyan);
+    color: var(--Transparent-white);
+    border: solid var(--Transparent-white);
+    cursor: pointer;
+    position: absolute;
+    font-weight: bold;
+}
+
+.three {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+    padding: 50px;
+    width: 210px;
+    grid-area: c;
+}
+.button-three {
+    color: var(--Very-dark-cyan);
+}
+.button-three:hover {
+    background-color: var(--Very-dark-cyan);
+    color: var(--Transparent-white);
+    border: solid var(--Transparent-white);
+    cursor: pointer;
+    position: absolute;
+    font-weight: bold;
+}
+.contener {
+    height: 500px;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "a b c";
+    margin: auto;
+    margin-top: 100px;
+}
+
+button {
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 50px;
+    border: none;
+    vertical-align: bottom;
+    margin-top: 60px;
+}
+}
+@media (max-width: 600px) {
+    p {
+        color: var(--Transparent-white);
+        font-size: var(--Font-size);
+        font-family: 'Lexend Deca', sans-serif;
+        line-height: 1.5;
+    }
+    h1 {
+        font-family: 'Big Shoulders Display', cursive;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: var(--Very-light-gray);
+    }
+    .one {
+        background-color: var(--Bright-orange);
+        border-radius: 10px 10px 0 0;
+        padding: 50px;
+        width: 210px;
+        grid-area: a;
+    }
+    .button-one {
+        color: var(--Bright-orange);
+    }
+    .button-one:hover {
+        background-color: var(--Bright-orange);
+        color: var(--Transparent-white);
+        border: solid var(--Transparent-white);
+        cursor: pointer;
+        position: absolute;
+        font-weight: bold;
+    }
+    
+    .two {
+        background-color: var(--Dark-cyan);
+        padding: 50px;
+        width: 210px;
+        grid-area: b;
+    }
+    .button-two {
+        color: var(--Dark-cyan);
+    }
+    .button-two:hover {
+        background-color: var(--Dark-cyan);
+        color: var(--Transparent-white);
+        border: solid var(--Transparent-white);
+        cursor: pointer;
+        position: absolute;
+        font-weight: bold;
+    }
+    
+    .three {
+        background-color: var(--Very-dark-cyan);
+        border-radius: 0 0 10px 10px;
+        padding: 50px;
+        width: 210px;
+        grid-area: c;
+    }
+    .button-three {
+        color: var(--Very-dark-cyan);
+    }
+    .button-three:hover {
+        background-color: var(--Very-dark-cyan);
+        color: var(--Transparent-white);
+        border: solid var(--Transparent-white);
+        cursor: pointer;
+        position: absolute;
+        font-weight: bold;
+    }
+    .contener {
+        margin-top: 100px;
+        display: grid;
+        justify-items: center;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c";
+        margin: auto;
+    }
+    
+    button {
+        padding: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 50px;
+        border: none;
+        vertical-align: bottom;
+        margin-top: 60px;
+    }
+}
